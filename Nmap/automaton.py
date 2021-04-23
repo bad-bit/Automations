@@ -46,7 +46,7 @@ def main():
 	with open(ipList, "r") as ipList:
 		ips = ipList.readlines()
 
-#	nmapScanner(ips)
+	nmapScanner(ips)
 
 def nmapScanner(ips):
 	xmlOutputs = []
