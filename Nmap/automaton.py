@@ -44,7 +44,7 @@ def main():
 	ipList = args.ipList
 
 	with open(ipList, "r") as ipList:
-		ips = ipList.readlines()
+		ips = ipList.read().splitlines()
 
 	nmapScanner(ips)
 
